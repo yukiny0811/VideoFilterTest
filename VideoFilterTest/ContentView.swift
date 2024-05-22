@@ -6,19 +6,34 @@
 //
 
 import SwiftUI
+import CoreImage.CIFilterBuiltins
+import AVKit
 
 struct ContentView: View {
+
+    @State var newURL: URL?
+
+    let r: CIFilter = {
+        let f = CIFilter.colorMonochrome()
+        f.setDefaults()
+        return f
+    }()
+
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+            if let newURL {
+                VideoPlayer(player: .init(url: newURL))
+            }
         }
         .padding()
+        .onAppear {
+            let filter = VideoFilter()
+            filter.ciFilterVideo(
+                videoURL: Bundle.main.url(forResource: "test", withExtension: "mp4")!,
+                ciFilter: r
+            ) { err, filteredVideoURL in
+                newURL = filteredVideoURL
+            }
+        }
     }
-}
-
-#Preview {
-    ContentView()
 }

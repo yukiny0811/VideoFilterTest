@@ -11,6 +11,8 @@
 		561859CB2BFDDF7700C8CF2F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 561859CA2BFDDF7700C8CF2F /* ContentView.swift */; };
 		561859CD2BFDDF7800C8CF2F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 561859CC2BFDDF7800C8CF2F /* Assets.xcassets */; };
 		561859D02BFDDF7800C8CF2F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 561859CF2BFDDF7800C8CF2F /* Preview Assets.xcassets */; };
+		561859D72BFDDF8000C8CF2F /* VideoFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 561859D62BFDDF8000C8CF2F /* VideoFilter.swift */; };
+		561859DB2BFDF30A00C8CF2F /* test.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 561859DA2BFDF2DE00C8CF2F /* test.mp4 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,8 @@
 		561859CA2BFDDF7700C8CF2F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		561859CC2BFDDF7800C8CF2F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		561859CF2BFDDF7800C8CF2F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		561859D62BFDDF8000C8CF2F /* VideoFilter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoFilter.swift; sourceTree = "<group>"; };
+		561859DA2BFDF2DE00C8CF2F /* test.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = test.mp4; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +59,8 @@
 				561859CA2BFDDF7700C8CF2F /* ContentView.swift */,
 				561859CC2BFDDF7800C8CF2F /* Assets.xcassets */,
 				561859CE2BFDDF7800C8CF2F /* Preview Content */,
+				561859D62BFDDF8000C8CF2F /* VideoFilter.swift */,
+				561859DA2BFDF2DE00C8CF2F /* test.mp4 */,
 			);
 			path = VideoFilterTest;
 			sourceTree = "<group>";
@@ -125,6 +131,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				561859DB2BFDF30A00C8CF2F /* test.mp4 in Resources */,
 				561859D02BFDDF7800C8CF2F /* Preview Assets.xcassets in Resources */,
 				561859CD2BFDDF7800C8CF2F /* Assets.xcassets in Resources */,
 			);
@@ -138,6 +145,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				561859CB2BFDDF7700C8CF2F /* ContentView.swift in Sources */,
+				561859D72BFDDF8000C8CF2F /* VideoFilter.swift in Sources */,
 				561859C92BFDDF7700C8CF2F /* VideoFilterTestApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
